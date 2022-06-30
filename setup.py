@@ -31,6 +31,6 @@ setup(name='discord-ext-fancy-help',
       packages=['discord.ext.fancyhelp'],
       license='MIT',
       description='An extension module to make embed based help menus with discord.py',
-      install_requires=['discord.py>=1.2.5'],
+      install_requires=[],
       python_requires='>=3.6.0'
 )
