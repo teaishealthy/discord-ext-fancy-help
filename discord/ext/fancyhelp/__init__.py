@@ -119,9 +119,7 @@ class EmbeddedHelpCommand(commands.HelpCommand):
     @staticmethod
     def shorten_text(text, width):
         """Shortens text to fit into the :param:`width`."""
-        if len(text) > width:
-            return text[:width - 3] + '...'
-        return text
+        return f'{text[:width - 3]}...' if len(text) > width else text
 
     @staticmethod
     def split_to_max_length(string, length, separator):
