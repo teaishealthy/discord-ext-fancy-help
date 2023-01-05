@@ -1,7 +1,7 @@
 from setuptools import setup
 import re
 
-with open('discord/ext/fancyhelp/__init__.py') as f:
+with open('fancyhelp/__init__.py') as f:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
 
 if not version:
@@ -24,11 +24,11 @@ if version.endswith(('a', 'b', 'rc')):
     except Exception:
         pass
 
-setup(name='discord-ext-fancy-help',
+setup(name='fancyhelp',
       author='redParrot17',
       url='https://github.com/redParrot17/discord-ext-fancy-help',
       version=version,
-      packages=['discord.ext.fancyhelp'],
+      packages=['fancyhelp'],
       license='MIT',
       description='An extension module to make embed based help menus with discord.py',
       install_requires=[],
